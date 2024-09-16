@@ -1,16 +1,11 @@
 package web.PP_3_1_1_spring_boot.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Table;
-import org.springframework.data.annotation.Id;
-
+import jakarta.persistence.*;
 
 @Entity
 @Table
 public class User {
-    @jakarta.persistence.Id
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
